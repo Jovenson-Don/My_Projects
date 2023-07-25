@@ -1,8 +1,9 @@
 import requests
+import os
 from twilio.rest import Client
 
-VIRTUAL_TWILIO_NUMBER = "your virtual twilio number"
-VERIFIED_NUMBER = "your own phone number verified with Twilio"
+VIRTUAL_TWILIO_NUMBER = "+18665083998"
+VERIFIED_NUMBER = "+17742402535"
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
@@ -10,10 +11,10 @@ COMPANY_NAME = "Tesla Inc"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-STOCK_API_KEY = "YOUR OWN API KEY FROM ALPHAVANTAGE"
-NEWS_API_KEY = "YOUR OWN API KEY FROM NEWSAPI"
-TWILIO_SID = "YOUR TWILIO ACCOUNT SID"
-TWILIO_AUTH_TOKEN = "YOUR TWILIO AUTH TOKEN"
+STOCK_API_KEY = os.environ.get("ALPHA_API_KEY")
+NEWS_API_KEY = os.environ.get("NEWS_API_KEY")
+TWILIO_SID = os.environ.get("TWILIO_ACC_SID")
+TWILIO_AUTH_TOKEN = os.environ.get("AUTH_TOKEN")
 
 ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
@@ -47,8 +48,6 @@ else:
 
 #Work out the percentage difference in price between closing price yesterday and closing price the day before yesterday.
 diff_percent = round((difference / float(yesterday_closing_price)) * 100)
-print(diff_percent)
-
 
     ## STEP 2: Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
 
