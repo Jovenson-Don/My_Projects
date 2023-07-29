@@ -28,4 +28,5 @@ headers = {
 
 response = requests.post(url=API_URL, headers=headers, json=exercise_params)
 response.raise_for_status()
-print(response.json())
+results = response.json()
+print(results)
