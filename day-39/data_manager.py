@@ -31,4 +31,13 @@ class DataManager:
                 url=f"{SHEET_URL}/{city['id']}",
                 json=new_data
             )
-            # print(response.text)
+
+    # def update_lowest_price(self, lowest_price):
+    #     for city in self.destination_data:
+    #         new_data = {
+    #             "price": {
+    #                 "lowestPrice": lowest_price
+    #             }
+    #
+    #         }
+    #         response = requests.put(url=f"{SHEET_URL}/{city['id']}", headers=sheet_header, json=new_data)
