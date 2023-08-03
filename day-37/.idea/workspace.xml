@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6acb85a8-72fc-40ee-b500-f7d6022878c7" name="Changes" comment="completed day-37">
-      <change afterPath="$PROJECT_DIR$/../day-39/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-39/.idea/day-39.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-39/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-39/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-39/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-39/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day-39/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-39/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day-39/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-39/flight_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day-39/flight_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-39/flight_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day-39/flight_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-39/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day-39/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-39/notification_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day-39/notification_manager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
