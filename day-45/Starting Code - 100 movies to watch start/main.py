@@ -10,9 +10,12 @@ website = response.text
 soup = BeautifulSoup(website, "html.parser")
 
 headers = soup.find_all(name="h3")
-print(headers)
 
-# for title in headers:
-#     print(title.getText())
+movie_list = [title.getText() for title in headers]
+movies = reversed(movie_list)
+
+with open("move_list", "w", encoding="utf8") as data:
+    for movie in movies:
+        data.write(f"{movie}\n")
 
 
