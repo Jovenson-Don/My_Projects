@@ -38,3 +38,5 @@ if price_as_float < BUY_PRICE:
                       msg=f"Subject:Amazon Low Price Alert!!!\n\nThe price for your {product} is now {price}!"
                           f" Here's the link to purchase!\n {url}".encode("utf-8")
                             )
+else:
+    print(f"Today's price is: {price}")
