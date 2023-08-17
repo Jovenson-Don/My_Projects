@@ -11,8 +11,11 @@ driver.get("https://www.python.org/")
 
 elements = driver.find_elements(By.CSS_SELECTOR, ".event-widget li")
 
-for tag in elements:
-    print(tag.text)
+data = {"time": tag.text for tag in elements}
+
+
+# for tag in elements:
+#     print(tag.text)
 
 
 
