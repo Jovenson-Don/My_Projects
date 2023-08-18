@@ -1,30 +1,17 @@
-import time
 from selenium import webdriver
-from selenium.webdriver import Keys
-from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-driver.get("https://www.python.org/")
+options = webdriver.ChromeOptions()
+options.add_experimental_option(name="detach", value=True)
 
+driver = webdriver.Chrome(service=Service(), options=options)
+driver.get("https://orteil.dashnet.org/experiments/cookie/")
 
-elements = driver.find_elements(By.CSS_SELECTOR, ".event-widget li")
+language = driver.find_element(By.ID, "promptAnchor")
+print(language.text)
+language.click()
 
-data = {"time": tag.text for tag in elements}
-
-
-# for tag in elements:
-#     print(tag.text)
-
-
-
-# google_search_box = driver.find_element(By.ID, "APjFqb")
-# google_search_box.send_keys("Automation")
-# google_search_box.send_keys(Keys.RETURN)
-# # driver.find_element(By.CLASS_NAME, "gNO89b")
-#
-# time.sleep(2)
-# driver.quit()
-#
-#
+cookie = driver.find_element(By.ID, "cookies")
+cookie.click()
