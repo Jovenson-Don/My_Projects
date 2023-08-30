@@ -12,9 +12,8 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option(name="detach", value=True)
 
 driver = webdriver.Chrome(service=Service(), options=options)
-driver.get(url="https://www.linkedin.com/jobs/search?keywords=Python%20Developer&location="
-               "Boston%2C%20Massachusetts%2C%20United%20States&geoId=102380872"
-               "&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0")
+driver.get(url="https://www.linkedin.com/jobs/search/"
+               "?currentJobId=3707286284&f_AL=true&keywords=Python%20Developer&location=")
 
 # Click Sign In
 time.sleep(3)
@@ -29,6 +28,6 @@ password.send_keys(PASSWORD)
 password.send_keys(Keys.ENTER)
 
 # You may be presented with a CAPTCHA - Solve the Puzzle Manually
-input("Press Enter when you have solved the Captcha")
+input("Press Enter when you have solved the Captcha: ")
 
-driver.quit()
+
