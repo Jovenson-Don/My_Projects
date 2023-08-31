@@ -33,8 +33,8 @@ password.send_keys(Keys.ENTER)
 input("Press 'Enter' when you have solved the Captcha: ")
 
 # Locate all job listing
-locate_all_jobs = driver.find_elements(By.CSS_SELECTOR, ".job-card-container--clickable")
-
+locate_all_jobs = driver.find_elements(By.CLASS_NAME, "jobs-search-results__list-item")
+print(len(locate_all_jobs))
 # Loop through each listing
 for job in locate_all_jobs:
     job.click()
