@@ -13,7 +13,8 @@ options.add_experimental_option(name="detach", value=True)
 
 driver = webdriver.Chrome(service=Service(), options=options)
 driver.get(url="https://www.linkedin.com/jobs/search/"
-               "?currentJobId=3707286284&f_AL=true&keywords=Python%20Developer&location=")
+               "?currentJobId=3681464751&distance=25&f"
+               "_AL=true&geoId=102380872&keywords=Python%20Developer&refresh=true")
 
 # Click Sign In
 time.sleep(3)
@@ -28,6 +29,19 @@ password.send_keys(PASSWORD)
 password.send_keys(Keys.ENTER)
 
 # You may be presented with a CAPTCHA - Solve the Puzzle Manually
-input("Press Enter when you have solved the Captcha: ")
+input("Press 'Enter' when you have solved the Captcha: ")
 
+# Locate apply button
+time.sleep(5)
+apply_button = driver.find_element(By.CSS_SELECTOR, ".jobs-apply-button")
+apply_button.click()
+
+next_button = driver.find_element(by=By.CSS_SELECTOR, value="footer button")
+next_button.click()
+
+review_button = driver.find_elements(by=By.CSS_SELECTOR, value="footer button")
+review_button[1].click()
+
+submit_button = driver.find_elements(by=By.CSS_SELECTOR, value="footer button")
+submit_button[1].click()
 
