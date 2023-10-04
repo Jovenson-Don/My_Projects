@@ -71,7 +71,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="LINKEDIN_PASSWORD" value="vi=4sp0h$tRU" />
+        <env name="LINKEDIN_PASSWORD" value="" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
