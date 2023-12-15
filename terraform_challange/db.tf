@@ -34,7 +34,7 @@ resource "docker_container" "phpmyadmin" {
 }
 
 resource "docker_container" "mariadb" {
-  image = "mariadb:challenge"
+  image = docker_image.mariadb-image.name
   name  = "db"
   hostname = "db"
   networks_advanced {
