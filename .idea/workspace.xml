@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Python Projects/CoffeeMachine/.idea/CoffeeMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/CoffeeMachine/.idea/CoffeeMachine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/CoffeeMachine/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/CoffeeMachine/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/.idea/Day-16-start.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/Coffeemaker OOP/coffee_maker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/Coffeemaker OOP/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/Coffeemaker OOP/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/Coffeemaker OOP/money_machine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/another_module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-16-start/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/.idea/Day-22.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/ball.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/paddle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Day-22/scoreboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-1/Day 1 band name generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/.idea/day-10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-10/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/.idea/day-11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-11/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/.idea/day-12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-12/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/.idea/day-13.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/game_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-13/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/.idea/day-14.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-14/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/.idea/day-17-start.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/Quiz Game/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/Quiz Game/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/Quiz Game/question_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/Quiz Game/quiz_brain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-17-start/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-18/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-18/.idea/day-18.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-18/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-18/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-18/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-18/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-19/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-19/.idea/day-19.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-19/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-19/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-19/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-19/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-2/Day 2 Tip generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/.idea/day-23.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/car_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-23/scoreboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/.idea/day-24.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Input/Letters/starting_letter.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Input/Names/invited_names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Aang.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Appa.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Katara.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Momo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Sokka.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Toph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Uncle Iroh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/Output/ReadyToSend/letter_for_Zuko.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-24/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/.idea/day-25.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/50_states.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/blank_states_img.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/main_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/missed_states_csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/new_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/squirrel_count.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-25/weather_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/.idea/day-26.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-26/nato_phonetic_alphabet.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/.idea/day-27.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/playground.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-27/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/.idea/day-28.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-28/tomato.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/day-29.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/CSV.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-29/password.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-3/Day 3 Treasure_game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/.idea/day-30.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/a_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-30/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/.idea/day-31.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/data/french_words.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/data/words_to_learn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/images/card_back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/images/card_front.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/images/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/images/wrong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-31/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-4/Day 4 rock papers scissors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/.idea/day-5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-5/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/.idea/day-7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/hangman_art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/hangman_words.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-7/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/.idea/day-8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-8/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/.idea/day-9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/day-9/main.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2aVIewx2s16lvYQJGnWx7yfwkcL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="" />
+      <created>1704397418545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704397418545</updated>
+    </task>
+    <servers />
+  </component>
+</project>
