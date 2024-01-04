@@ -5,14 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Kubernetes Resources With Terraform/frontend.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Lamp Stack With Terraform/Docker/db.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Lamp Stack With Terraform/Docker/httpd.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Lamp Stack With Terraform/Docker/network.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Lamp Stack With Terraform/Docker/phpmyadmin.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Lamp Stack With Terraform/Docker/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Launch EC2 With Terraform/install-nginx.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Launch EC2 With Terraform/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Launch EC2 With Terraform/provider.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/KodeKloud Terraform Challenge/Launch EC2 With Terraform/vars.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +35,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2aVIewx2s16lvYQJGnWx7yfwkcL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
