@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/Archive And Manipulate Data/script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/Conguire Go-App And Setup FirewallD/script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/Docker Setup/script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/New Users And Groups With Permissions/script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Linux Projects/LVM Volume for Database Team/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/LVM Volume for Database Team/script.sh" afterDir="false" />
-    </list>
+    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
