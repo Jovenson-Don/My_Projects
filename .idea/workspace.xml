@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/LVM Volume for Database Team/setup.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Countdown job in Kubernetes/job.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Countdown job in Kubernetes/job.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Cronjobs in Kubernetes/cronjob.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Cronjobs in Kubernetes/cronjob.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Deployments in Kubernetes Cluster/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Deployments in Kubernetes Cluster/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Replicaset in Kubernetes Cluster/replicaset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Replicaset in Kubernetes Cluster/replicaset.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Replication Controller in Kubernetes/replicationcontroller.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Replication Controller in Kubernetes/replicationcontroller.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Set Limits for Resources in Kubernetes/pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Set Limits for Resources in Kubernetes/pod.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Linux Projects/LVM Volume for Database Team/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/LVM Volume for Database Team/setup.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
