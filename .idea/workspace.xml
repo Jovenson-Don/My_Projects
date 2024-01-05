@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="" />
+    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DevOps Projects/Linux Projects/LVM Volume for Database Team/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Countdown job in Kubernetes/job.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Countdown job in Kubernetes/job.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Cronjobs in Kubernetes/cronjob.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Cronjobs in Kubernetes/cronjob.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Deployments in Kubernetes Cluster/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Deployments in Kubernetes Cluster/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Replicaset in Kubernetes Cluster/replicaset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Create Replicaset in Kubernetes Cluster/replicaset.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Replication Controller in Kubernetes/replicationcontroller.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Replication Controller in Kubernetes/replicationcontroller.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Set Limits for Resources in Kubernetes/pod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Set Limits for Resources in Kubernetes/pod.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -57,5 +67,8 @@
       <updated>1704397418545</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
