@@ -1,0 +1,11 @@
+- name: Create file on stapp01
+  hosts: stapp01
+  become: true
+  tasks:
+    - name: Create blank txt
+      file:
+        path: /usr/src/nfsshare.txt
+        group: {{ ansible_user }}
+        owner: {{ ansible_user }}
+        mode: '0777'
+        state: touch

@@ -1,0 +1,8 @@
+- name: Create file
+  hosts: stapp01
+  become: true
+  tasks:
+    - name: Create blank txt file
+      file:
+        path: /tmp/file.txt
+        state: touch

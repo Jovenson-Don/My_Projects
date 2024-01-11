@@ -1,0 +1,9 @@
+- name: Copy data to all servers
+  hosts: app_servers
+  become: true
+  tasks:
+    - name: Copy index file
+      copy:
+        src: /usr/src/finance/index.html 
+        dest: /opt/finance
+        remote_src: true
