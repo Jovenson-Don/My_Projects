@@ -1,0 +1,8 @@
+- name: Install packages with yum
+  hosts: app_servers
+  become: true
+  tasks:
+    - name: Install wget
+      yum:
+        name: wget
+        state: latest

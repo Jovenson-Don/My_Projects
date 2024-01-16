@@ -1,0 +1,10 @@
+- name: Archive files
+  hosts: all
+  become: true
+  tasks:
+    - name: Archive sysops
+      archive:
+        path: /usr/src/sysops/
+        dest: /opt/sysops/cluster.tar.gz
+        owner: '{{ ansible_user }}'
+        group: '{{ ansible_user }}'

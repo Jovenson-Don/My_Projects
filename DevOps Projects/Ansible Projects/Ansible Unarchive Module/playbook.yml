@@ -1,0 +1,11 @@
+- name: Unarchive files
+      2   hosts: all
+      3   become: true
+      4   tasks:
+      5     - name: Unarchive to each server
+      6       unarchive:
+      7         src: /usr/src/dba/datacenter.zip
+      8         dest: /opt/dba/
+      9         owner: '{{ ansible_user }}'
+     10         group: '{{ ansible_user }}'
+     11         mode: 0655

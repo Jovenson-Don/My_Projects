@@ -1,0 +1,24 @@
+- name: Install application(s)
+  hosts: all
+  become: true
+  tasks:
+    - name: Install httpd
+      yum:
+        name: httpd
+        state: latest
+    - name: Start httpd
+      service:
+        name: httpd
+        state: started
+        enablec: true
+    - name: Update index
+      blockinfile:
+        path: /var/www/html/index.html
+        create: true
+        owner: apache
+        group: apache
+        mode: 0777
+        block: |
+           Welcome to XfusionCorp!
+           This is Nautilus sample file, created using Ansible!
+           Please do not modify this file manually!
