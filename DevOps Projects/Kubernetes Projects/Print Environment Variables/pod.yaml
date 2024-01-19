@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: print-envars-greeting
+  labels:
+    name: myapp
+spec:
+  containers:
+  - name: print-env-container
+    image: bash   
+    ports:
+      - containerPort: 80
+    command:
+      - "sh"
+      - "-c"
+    args:
+      - 'echo "$(GREETING) $(COMPANY) $(GROUP)"'
+    env:
+      - name: GREETING
+        value: "Welcome to"
+      - name: COMPANY
+        value: "xFusionCorp"
+      - name: GROUP
+        value: "Ltd"
+  restartPolicy: Never
+    
