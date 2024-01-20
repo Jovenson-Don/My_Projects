@@ -8,4 +8,4 @@ spec:
     app: myapp
   ports:
   - port: 80
-    NodePort: 30011
+    nodePort: 30011
