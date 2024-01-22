@@ -1,0 +1,50 @@
+- name: Manage ACLs
+  hosts: all
+  become: true
+  tasks:
+    - name: Create file on {{ inventory_hostname }}
+      file:
+        path: /opt/itadmin/blog.txt
+        state: touch
+      when: inventory_hostname == 'stapp01'
+
+    - name: Configure acl on {{ inventory_hostname }}
+      acl:
+        path: /opt/itadmin/blog.txt
+        entity: tony
+        etype: group
+        permissions: r
+        state: present
+      when: inventory_hostname == 'stapp01'
+
+    - name: Create file on {{ inventory_hostname }}
+      file:
+        path: /opt/itadmin/story.txt
+        state: touch
+      when: inventory_hostname == 'stapp02'
+
+    - name: Configure acl on {{ inventory_hostname }}
+      acl:
+        path: /opt/itadmin/story.txt
+        entity: steve
+        etype: user
+        permissions: rw
+        state: present
+      when: inventory_hostname == 'stapp02'
+
+    - name: Create file on {{ inventory_hostname }}
+      file:
+        path: /opt/itadmin/media.txt
+        state: touch
+      when: inventory_hostname == 'stapp03'
+
+    - name: Configure acl on {{ inventory_hostname }}
+      acl:
+        path: /opt/itadmin/media.txt
+        entity: banner
+        etype: group
+        permissions: rw
+        state: present
+      when: inventory_hostname == 'stapp03'
+
+
