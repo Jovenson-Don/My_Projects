@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  httpd:
+    build: .
+    image: httpd:latest
+    container_name: httpd
+    working_dir: /opt/devops
+    ports:
+      - 8086:80
+    volumes:
+      - /opt/devops:/usr/local/apache2/htdocs
