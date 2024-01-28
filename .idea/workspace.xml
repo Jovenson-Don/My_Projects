@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Deploy Jenkins on Kubernetes/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Deploy Jenkins on Kubernetes/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Deploy Jenkins on Kubernetes/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DevOps Projects/Kubernetes Projects/Deploy Jenkins on Kubernetes/service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
   <component name="RunManager">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Joey_Personal_Projects" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
