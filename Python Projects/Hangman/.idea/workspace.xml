@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcec2008-1d55-40b2-bd5e-77c18de2d247" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bcec2008-1d55-40b2-bd5e-77c18de2d247" name="Changes" comment="Updating hangman project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +38,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jdon\Joey's Personal Projects\Python Projects\Hangman\.venv" />
       <recent name="C:\Users\jdon\Joey's Personal Projects\Python Projects\Hangman" />
+      <recent name="C:\Users\jdon\Joey's Personal Projects\Python Projects\Hangman\.venv" />
     </key>
   </component>
   <component name="RunManager">
@@ -85,11 +83,22 @@
       <option name="presentableId" value="Default" />
       <updated>1690324322605</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updating hangman project">
+      <option name="closed" value="true" />
+      <created>1706828324490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706828324490</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Updating hangman project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating hangman project" />
   </component>
 </project>
