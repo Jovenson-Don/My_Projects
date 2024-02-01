@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/day-7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/day-7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/hangman_art.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/hangman_words.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/day-46.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/day-46.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/day-17-start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/day-17-start.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="Updates to projects" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -47,6 +37,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.Day 1 band name generator.executor": "Run",
+    "Python.hello.executor": "Run",
     "Python.main.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -71,9 +63,20 @@
       <option name="presentableId" value="Default" />
       <updated>1704397418545</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updates to projects">
+      <option name="closed" value="true" />
+      <created>1706825180988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706825180988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updates to projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to projects" />
   </component>
 </project>
