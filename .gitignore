@@ -6,3 +6,4 @@ Vagrantfile
 .idea/
 .vagrant/
 .venv/
+.gitignore
