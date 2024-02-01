@@ -3,6 +3,3 @@
 Vagrantfile
 .vagrant/
 .idea/workspace.xml
-.idea/
-.vagrant/
-.venv/
