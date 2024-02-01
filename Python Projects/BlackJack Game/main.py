@@ -1,6 +1,5 @@
 from art import logo
 import random
-from replit import clear
 
 
 def start_game():

@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa886f5-4cbb-4397-b20e-af692fb12dad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/day-7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/day-7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Hangman/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/hangman_art.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/hangman_words.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Hangman/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/day-46.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/day-46.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Music Time Machine/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/day-17-start.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/day-17-start.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Python Projects/Quiz Game/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,44 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jdon/Joey's Personal Projects&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/jdon/Joey's Personal Projects"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Joey_Personal_Projects" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Projects" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Projects/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
       </set>
     </attachedChunks>
   </component>
