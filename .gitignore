@@ -1,9 +1,0 @@
-.idea
-.vscode
-Vagrantfile
-.vagrant/
-.idea/workspace.xml
-.idea/
-.vagrant/
-.venv/
-.gitignore
