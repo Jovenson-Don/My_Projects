@@ -1,0 +1,22 @@
+- name: Replace word on all servers
+  hosts: all
+  become: true
+  tasks:
+    - name: Replace word on stapp01
+      replace:
+        path: /opt/devops/blog.txt
+        regexp: xFusionCorp
+        replace: Nautilus
+      when: inventory_hostname == "stapp01"
+    - name: Replace word on stapp02
+      replace:
+        path: /opt/devops/story.txt
+        regexp: Nautilus
+        replace: KodeKloud
+      when: inventory_hostname == "stapp02"
+    - name: Replace word on stapp03
+      replace:
+        path: /opt/devops/media.txt
+        regexp: KodeKloud
+        replace: xFusionCorp Industries
+      when: inventory_hostname == "stapp03"

@@ -1,0 +1,13 @@
+- name: Install vsftpd on all servers
+  hosts: all
+  become: true
+  tasks:
+    - name: Install vsftpd on each server
+      yum:
+        name: vsftpd
+        state: present
+    - name: Enabled httpd service
+      service:
+        name: vsftpd
+        state: started
+        enabled: yes
