@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-deployment-nautilus
+  labels:
+    app: httpd
+  namespace: httpd-namespace-nautilus
+spec:
+  selector:
+    matchLabels:
+      app: httpd
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: httpd
+    spec:
+      containers:
+        - name: httpd-containers-nautilus
+          image: httpd:latest
+          ports:
+            - containerPort: 80
