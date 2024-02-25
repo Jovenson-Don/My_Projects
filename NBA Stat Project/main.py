@@ -9,6 +9,8 @@ def grab_stats():
 
 
 is_on = True
+year = None
+player_full_name = None
 
 while is_on:
     try:
@@ -25,8 +27,8 @@ while is_on:
 
         if data["count"] == 0:
             print(f"This {player_full_name} does not exist. Try again.")
-        elif date - year == -1:
-            print(f"No stats recorded for {player} in the {year} season. Try again.")
+        elif date - year <= -1:
+            print(f"Season did not happen yet try again. Try again.")
         else:
             ppg = float(format(results["PTS"] / results["games"], ".2f"))
             apg = float(format(results["AST"] / results["games"], ".2f"))
@@ -40,4 +42,4 @@ while is_on:
     except ValueError:
         print("Enter a number for year. Try again.")
     except IndexError:
-        print(f"No stats recorded for player in the year season. Try again.")
+        print(f"{player_full_name} did not play in the {year} season. Try again.")
