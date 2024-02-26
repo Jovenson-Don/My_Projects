@@ -30,13 +30,13 @@ while is_on:
         elif date - year <= -1:
             print(f"Season did not happen yet try again. Try again.")
         else:
-            ppg = float(format(results["PTS"] / results["games"], ".2f"))
-            apg = float(format(results["AST"] / results["games"], ".2f"))
-            rpg = float(format(results["TRB"] / results["games"], ".2f"))
-            spg = float(format(results["STL"] / results["games"], ".2f"))
-            bpg = float(format(results["BLK"] / results["games"], ".2f"))
-            tpg = float(format(results["TOV"] / results["games"], ".2f"))
-            fgp = format(float(results["field_percent"]) * 100, ".2f")
+            ppg = float(format(results["PTS"] / results["games"], ".1f"))
+            apg = float(format(results["AST"] / results["games"], ".1f"))
+            rpg = float(format(results["TRB"] / results["games"], ".1f"))
+            spg = float(format(results["STL"] / results["games"], ".1f"))
+            bpg = float(format(results["BLK"] / results["games"], ".1f"))
+            tpg = float(format(results["TOV"] / results["games"], ".1f"))
+            fgp = format(float(results["field_percent"]) * 100, ".1f")
             print(f"{player_full_name} averages for {year} season: {ppg}PPG, {apg}APG, {rpg}RPG, "
                   f"{spg}SPG, {bpg}BLK, {tpg}TOV {fgp}FG")
     except ValueError:
