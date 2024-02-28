@@ -1,0 +1,12 @@
+.default-form {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url(../../static/nba_logo.jpg);
+}
+
+h2 {
+    font-size: large;
+}

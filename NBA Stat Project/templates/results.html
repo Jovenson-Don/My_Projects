@@ -5,12 +5,12 @@
     <title>NBA Stats</title>
     <link rel="stylesheet" href="../static/css/style.css">
 <body background="../static/nba_logo.jpg">
-    <form action=" {{ url_for('receive_stats') }}" method="post" class="default-form">
+    <form action=" {{ url_for('home') }}" method="get" class="default-form">
         <h1>NBA Stats</h1>
         <p>Where to get all the latest nba stats!</p>
-        <input type="text" placeholder="Enter nba player" name="player">
-        <input type="text" placeholder="Which season" name="year">
-        <button type="submit">Search</button>
+        <h2>{{ results_info }}</h2>
+        <h2> {{ results }}</h2>
+        <button type="submit">Go back home</button>
     </form>
 </body>
 </html>
