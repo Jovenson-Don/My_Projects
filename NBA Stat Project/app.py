@@ -14,7 +14,6 @@ def home():
 def receive_stats():
     api = "https://nba-stats-db.herokuapp.com/api/playerdata/name/"
     date = datetime.now().year - 1
-
     try:
         player = request.form["player"].strip()
         year = int(request.form["year"])
@@ -35,7 +34,6 @@ def receive_stats():
             fgp = format(float(results[date - year]["field_percent"]) * 100, ".1f")
             player_info = f"{player_full_name} averages for the {year} season"
             player_results = f"{ppg}PPG {apg}APG {rpg}RPG {spg}SPG {bpg}BLK {tpg}TOV {fgp}FG"
-            print(player_results)
             return render_template("results.html", results=player_results, results_info=player_info)
     except ValueError:
         return render_template("index.html")
