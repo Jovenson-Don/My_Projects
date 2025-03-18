@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Jovenson Don</h1>
     <img src="./assets/headshot.jfif" alt="Joey" height="200">
     <hr>
-    <h2>Contact Info</h2>
+    <h2 >Contact Info</h2>
     <p>
         Phone: (774) 240-2535 <br>
         Email: Jovensondon@yahoo.com <br>
@@ -23,39 +24,45 @@
     <hr>
     <h2>Skills</h2>
     <ul>
-        <li>Operating System
-            <ul>
-                <li>Windows</li>
-                <li>Mac OS</li>
-                <li>Linux</li>
-            </ul>
+        <div id="skills-1" class="all-skills">
+            <li>Operating System
+                <ul>
+                    <li>Windows</li>
+                    <li>Mac OS</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
         </li>
-        <li>
-            Technical Skills
-            <ul>
-                <li>Troubleshooting</li>
-                <li>Porblem-Solving</li>
-                <li>Hardware/Software Support</li>
-                <li>Network</li>
-                <li>System Administration</li>
-                <li>Security</li>
-                <li>Virtualization</li>
-                <li>HelpDesk Ticket System</li>
-                <li>MDM</li>
-            </ul>
-        </li>
+        <div id="skills-2">
+            <li>
+                Technical Skills
+                <ul>
+                    <li>Troubleshooting</li>
+                    <li>Porblem-Solving</li>
+                    <li>Hardware/Software Support</li>
+                    <li>Network</li>
+                    <li>System Administration</li>
+                    <li>Security</li>
+                    <li>Virtualization</li>
+                    <li>HelpDesk Ticket System</li>
+                    <li>MDM</li>
+                </ul>
+            </li>
+        </div>
     </ul>
     <hr>
     <h2>Certifciation</h2>
-    <ul>
-        <li>AWS SysOps Administrator – Associate, May 2023</li>
-        <li>AWS Certified Solutions Architect – Associate, Feb 2023</li>
-        <li>AWS Cloud Practitioner, Dec 2022</li>
-    </ul>
+    <div">
+        <ul>
+            <li>AWS SysOps Administrator – Associate, May 2023</li>
+            <li>AWS Certified Solutions Architect – Associate, Feb 2023</li>
+            <li>AWS Cloud Practitioner, Dec 2022</li>
+        </ul>
+    </div>
     <hr>
     <h2>Work Experience</h2>
     <h3>Federal Defenders Office of MA, NH, and RI, Boston, MA - Computer System Administrator</h3>
-    <p>September 2020 – Present, Boston MA</p>
+    <h4>September 2020 – Present, Boston MA</p>
     <ul>
         <li>Diagnosing and resolving hardware, software, and network issues to minimize downtime and disruptions.</li>
         <li>Collaborating with teams to understand their requirements and provide appropriate solutions.</li>
