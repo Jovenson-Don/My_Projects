@@ -13,4 +13,4 @@ total_bill = bill + tip
 
 # Calculate total amount per person with tip
 amount_per_person = "{:.2f}".format(total_bill / people,)
-print("Amount due per person.... ${amount_per_person}")
+print(f"Amount due per person.... ${amount_per_person}")
