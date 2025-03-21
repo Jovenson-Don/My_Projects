@@ -23,12 +23,4 @@ h4 {
 .all-skills {
     display: inline-block;
     position: relative;
-    margin: 0px 350px;
-}
-
-@media (max-width: 680px) {
-    .all-skills {
-        position: relative;
-        margin: 0px;
-    }
 }
