@@ -37,20 +37,23 @@ hr {
 
 .profile-pic {
     width: 40%;
-
     padding-top: 10px;
-    padding-left: 100px;
 }
 
 .about-me-container {
     display: flex;
     align-items: center;
+    background-color: grey;
 }
 
 .about-me-content {
     text-align: left;
     padding-left: 50px;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 150px;
+    border: 5px solid;
 }
 
+span {
+    font-style: italic;
+}
