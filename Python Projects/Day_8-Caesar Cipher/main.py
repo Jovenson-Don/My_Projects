@@ -23,7 +23,6 @@ def caesar(start_text, shift_amount, cipher_direction):
 
     print(f"Here's the {cipher_direction}d result: {end_text}")
 
-
 print(art.logo)
 
 # TODO-4: Can you figure out a way to ask the user if they want to restart the cipher program?
