@@ -1,44 +1,55 @@
-import art
+# Import and display the logo from art.py
+from art import logo
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
-            'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
-            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# Initialize the control variable to keep the program running
+go_on = True
+
+# Define the alphabet list for the Caesar cipher
+alphabet = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+    'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+]
+print(logo)
 
 
-def caesar(start_text, shift_amount, cipher_direction):
-    end_text = ""
-    if cipher_direction == "decode":
-        shift_amount *= -1
-    for char in start_text:
-        if char in alphabet:
-            position = alphabet.index(char)
-            new_position = position + shift_amount
-            end_text += alphabet[new_position]
-        else:
-            end_text += char
-        # TODO-3: What happens if the user enters a number/symbol/space?
-        # Can you fix the code to keep the number/symbol/space when the text is encoded/decoded?
-        # e.g. start_text = "meet me at 3"
-        # end_text = "•••• •• •• 3"
+def caesar(original_text, shift_amount, encode_or_decode):
+    """Performs Caesar cipher encryption or decryption."""
+    output_text = ""
 
-    print(f"Here's the {cipher_direction}d result: {end_text}")
+    for letter in original_text:
+        # Reverse the shift if decoding
+        if encode_or_decode == "decode":
+            shift_amount *= -1
 
-print(art.logo)
+        # If the character is not in the alphabet, leave it unchanged
+        if letter not in alphabet:
+            output_text += letter
+            continue
 
-# TODO-4: Can you figure out a way to ask the user if they want to restart the cipher program?
-# e.g. Type 'yes' if you want to go again. Otherwise type 'no'.
-# If they type 'yes' then ask them for the direction/text/shift again and call the caesar() function again?
-# Hint: Try creating a while loop that continues to execute the program if the user types 'yes'.
-should_continue = True
-while should_continue:
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+        # Calculate the new position after shifting
+        shifted_position = alphabet.index(letter) + shift_amount
+        shifted_position %= len(alphabet)  # Wrap around if necessary
+        output_text += alphabet[shifted_position]
+
+    # Print the final result
+    print(f"Here is the {encode_or_decode}d result: {output_text}")
+
+
+# Main loop to keep the program running until the user decides to stop
+while go_on:
+    # Get user choice: encode or decode
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+
+    # Get the message to be encrypted or decrypted
     text = input("Type your message:\n").lower()
+
+    # Get the shift value and convert it to an integer
     shift = int(input("Type the shift number:\n"))
 
-    shift = shift % 26
-    caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-    result = input("Type 'yes' if you want to go again. Otherwise type 'no'.")
-    if result == "no":
-        should_continue = False
-        print("Goodbye.")
+    # Call the caesar function with the provided inputs
+    caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
 
+    # Ask the user if they want to continue or exit
+    go_on = input("Do you want to continue? yes or no: ")
+    if go_on == "no":
+        go_on = False
