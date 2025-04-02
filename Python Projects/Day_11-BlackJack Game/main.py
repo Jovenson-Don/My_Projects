@@ -70,5 +70,4 @@ def start_game():
 
 
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
-    clear()
     start_game()
