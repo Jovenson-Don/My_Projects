@@ -3,13 +3,13 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-const d = new Date("April 12, 2025 01:15:00");
+const d = new Date();
 let day = d.getDay();
 
 let type = "a weekday";
 let adv ="time to workkkk....";
 
-if (d < 0 || d > 5) {
+if (day < 0 || day > 5) {
     type = "the weekend!";
     adv ="time to have fun!!!"; 
 };
