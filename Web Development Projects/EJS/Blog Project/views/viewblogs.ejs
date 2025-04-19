@@ -1,3 +1,28 @@
 <%- include("partials/header") %>
 
+<% if (locals.blogs && locals.blogs.length > 0) { %>
+    <% for (let i = 0; i < locals.blogs.length; i++) { %>
+      <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+        <div class="modal-dialog">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+              <h1 class="modal-title fs-5"><%= locals.blogs[i]["full_name"] %></h1>
+            </div>
+            <div class="modal-body py-0">
+              <p><%= locals.blogs[i]["blog"] %></p>
+            </div>
+            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+              <button type="button" class="btn btn-lg btn-primary" id="edit">Edit</button>
+              <button name="blog" type="submit" class="btn btn-lg btn-secondary">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% } %>
+  <% } else { %>
+    <div class="container">
+    <p id="no_post">No blog posts available.</p>
+    </div>
+  <% } %>
+
 <%- include("partials/footer.ejs") %>
