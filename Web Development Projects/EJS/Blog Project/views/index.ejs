@@ -2,7 +2,7 @@
 
 <html>
   <body>
-    <div class="position-relative p-5 text-center text-muted bg-body">
+    <div class="position-relative p-5 text-center text-muted bg-body ">
       <svg class="bi mt-5 mb-3" width="48" height="48" aria-hidden="true"><use xlink:href="#check2-circle"></use></svg>
       <h1 class="text-body-emphasis">Create A Blog!</h1>
       <p class="col-lg-6 mx-auto mb-4">
@@ -11,6 +11,39 @@
       <button class="btn btn-primary px-5 mb-5" type="submit" onclick="window.location.href='/create'" >
         Start Now
       </button>
+    </div>
+    <div class="container border-top">
+      <div class="container">
+        <h2 id="no_post">Latest Blogs</h2>
+        </div>
+      <% if (locals.blogs && locals.blogs.length > 0) { %>
+        <% for (let i = 0; i < locals.blogs.length; i++) { %>
+          <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+            <div class="modal-dialog">
+              <div class="modal-content rounded-4 shadow">
+                <div class="modal-header border-bottom-0">
+                  <h1 class="modal-title fs-5"><%= locals.blogs[i]["full_name"] %></h1>
+                </div>
+                <div class="modal-body py-0">
+                  <p><%= locals.blogs[i]["blog"] %></p>
+                </div>
+                  <form action="/edit-blog/<%= i %>" method="GET" class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                    <button type="submit" class="btn btn-lg btn-primary" id="edit">Edit</button>
+                  </form>
+                <form action="/delete/<%= i %>" method="GET" class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                  <button name="blog" type="submit" class="btn btn-lg btn-secondary">Delete</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        <% } %>
+      <% } else { %>
+        <div class="container">
+        <p id="no_post">No blog posts available.</p>
+        </div>
+      <% } %>
+      
+
     </div>
   </body>
 </html>

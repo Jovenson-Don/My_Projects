@@ -11,10 +11,12 @@
             <div class="modal-body py-0">
               <p><%= locals.blogs[i]["blog"] %></p>
             </div>
-            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
-              <button type="button" class="btn btn-lg btn-primary" id="edit">Edit</button>
+              <form action="/edit-blog/<%= i %>" method="GET" class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                <button type="submit" class="btn btn-lg btn-primary" id="edit">Edit</button>
+              </form>
+            <form action="/delete/<%= i %>" method="GET" class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
               <button name="blog" type="submit" class="btn btn-lg btn-secondary">Delete</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -24,5 +26,5 @@
     <p id="no_post">No blog posts available.</p>
     </div>
   <% } %>
-
+  
 <%- include("partials/footer.ejs") %>
