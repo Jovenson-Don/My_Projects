@@ -28,12 +28,22 @@ app.get("/edit-blog/:id", (req, res) => {
     res.render("edit-blog.ejs", {post: allBlogs[blogID]});
 });
 app.post("/submit", (req,res) => {
-    allBlogs.push(req.body);
+    let blogData = {
+        full_name: req.body.full_name,
+        blog: req.body.blog,
+        posted: new Date().toLocaleString("en-US", {timeZone: "America/New_York"}),
+    };
+    allBlogs.push(blogData);
     res.redirect("/all-blogs");
 });
 
 app.post("/updated", (req, res) => {
-    allBlogs[blogID] = req.body;
+    let blogData = {
+        full_name: req.body.full_name,
+        blog: req.body.blog,
+        posted: new Date().toLocaleString("en-US", {timeZone: "America/New_York"}),
+    };
+    allBlogs[blogID] = blogData
     res.redirect("/all-blogs");
     
 });

@@ -20,9 +20,10 @@
           <div class="d-flex flex-wrap gap-4 justify-content-start">
             <% for (let i = 0; i < locals.blogs.length; i++) { %>
               <div class="card shadow" style="width: 300px;">
-                <div class="card-body">
-                  <h5 class="card-title"><%= locals.blogs[i]["full_name"] %></h5>
-                  <p class="card-text"><%= locals.blogs[i]["blog"] %></p>
+                <div class="card-body pb-0">
+                  <h5 class="card-title blog border-bottom 1 pb-1"><%= locals.blogs[i]["full_name"] %></h5>
+                  <p class="card-text blog"><%= locals.blogs[i]["blog"] %></p>
+                  <p class="blog"><%= locals.blogs[i]["posted"] %></p>
                 </div>
                 <div class="card-footer bg-white border-top-0 d-flex flex-column gap-2">
                   <form action="/edit-blog/<%= i %>" method="GET">
@@ -40,8 +41,6 @@
         <p id="no_post">No blog posts available.</p>
         </div>
       <% } %>
-      
-
     </div>
   </body>
 </html>

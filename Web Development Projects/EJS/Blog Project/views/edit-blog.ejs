@@ -10,6 +10,7 @@
         </div>
         <div class="modal-body py-0">
             <textarea name="blog" class="form-control" rows="8" required><%= locals.post["blog"] %></textarea>
+            <p><%= locals.post["posted"] %></p>
         </div>
         <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
             <button type="submit" class="btn btn-lg btn-primary" id="edit" >Update Blog</button>
