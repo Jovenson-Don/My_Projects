@@ -1,23 +1,22 @@
 <%- include("partials/header") %>
 
-
 <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
-    <div class="modal-dialog">
-      <div class="modal-content rounded-4 shadow">
-        <form action="/updated" method="POST">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4 shadow">
+      <form action="/updated" method="POST">
         <div class="modal-header border-bottom-0">
-            <input name="full_name" value="<%= locals.post["full_name"] %>" class="form-control" required></input>
+          <input name="full_name" value="<%= locals.post["full_name"] %>" class="form-control" required></input>
         </div>
         <div class="modal-body py-0">
-            <textarea name="blog" class="form-control" rows="8" required><%= locals.post["blog"] %></textarea>
-            <p><%= locals.post["posted"] %></p>
+          <textarea name="blog" class="form-control" rows="8" required><%= locals.post["blog"] %></textarea>
+          <p><%= locals.post["posted"] %></p>
         </div>
         <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
-            <button type="submit" class="btn btn-lg btn-primary" id="edit" >Update Blog</button>
-        </form>
+          <button type="submit" class="btn btn-lg btn-primary" id="edit">Update Blog</button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
+</div>
 
-  <%- include("partials/footer.ejs") %>
+<%- include("partials/footer.ejs") %>

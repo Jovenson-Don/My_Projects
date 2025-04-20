@@ -2,43 +2,49 @@
 
 <html>
   <body>
-    <div class="position-relative p-5 text-center text-muted bg-body ">
-      <svg class="bi mt-5 mb-3" width="48" height="48" aria-hidden="true"><use xlink:href="#check2-circle"></use></svg>
+    <div class="position-relative p-5 text-center text-muted bg-body">
+      <svg class="bi mt-5 mb-3" width="48" height="48" aria-hidden="true">
+        <use xlink:href="#check2-circle"></use>
+      </svg>
       <h1 class="text-body-emphasis">Create A Blog!</h1>
       <p class="col-lg-6 mx-auto mb-4">
         We’d love to hear from you! Take a moment to write a short blog entry about your thoughts, experiences, or anything on your mind today.
       </p>
-      <button class="btn btn-primary px-5 mb-5" type="submit" onclick="window.location.href='/create'" >
+      <button class="btn btn-primary px-5 mb-5" type="submit" onclick="window.location.href='/create'">
         Start Now
       </button>
     </div>
+
     <div class="container border-top">
       <div class="container pt-3 pb-3">
         <h2 id="no_post">Latest Blogs</h2>
-        </div>
-        <% if (locals.blogs && locals.blogs.length > 0) { %>
-          <div class="d-flex flex-wrap gap-4 justify-content-start">
-            <% for (let i = 0; i < locals.blogs.length; i++) { %>
-              <div class="card shadow" style="width: 300px;">
-                <div class="card-body pb-0">
-                  <h5 class="card-title blog border-bottom 1 pb-1"><%= locals.blogs[i]["full_name"] %></h5>
-                  <p class="card-text blog"><%= locals.blogs[i]["blog"] %></p>
-                  <p class="blog"><%= locals.blogs[i]["posted"] %></p>
-                </div>
-                <div class="card-footer bg-white border-top-0 d-flex flex-column gap-2">
-                  <form action="/edit-blog/<%= i %>" method="GET">
-                    <button type="submit" class="btn btn-primary w-100">Edit</button>
-                  </form>
-                  <form action="/delete/<%= i %>" method="GET">
-                    <button type="submit" class="btn btn-secondary w-100">Delete</button>
-                  </form>
-                </div>
+      </div>
+
+      <% if (locals.blogs && locals.blogs.length > 0) { %>
+        <div class="d-flex flex-wrap gap-4 justify-content-start">
+          <% for (let i = 0; i < locals.blogs.length; i++) { %>
+            <div class="card shadow" style="width: 300px;">
+              <div class="card-body pb-0">
+                <h5 class="card-title blog border-bottom 1 pb-1">
+                  <%= locals.blogs[i]["full_name"] %>
+                </h5>
+                <p class="card-text blog"><%= locals.blogs[i]["blog"] %></p>
+                <p class="blog"><%= locals.blogs[i]["posted"] %></p>
               </div>
-            <% } %>
-          </div>
+              <div class="card-footer bg-white border-top-0 d-flex flex-column gap-2">
+                <form action="/edit-blog/<%= i %>" method="GET">
+                  <button type="submit" class="btn btn-primary w-100">Edit</button>
+                </form>
+                <form action="/delete/<%= i %>" method="GET">
+                  <button type="submit" class="btn btn-secondary w-100">Delete</button>
+                </form>
+              </div>
+            </div>
+          <% } %>
+        </div>
       <% } else { %>
         <div class="container">
-        <p id="no_post">No blog posts available.</p>
+          <p id="no_post">No blog posts available.</p>
         </div>
       <% } %>
     </div>
