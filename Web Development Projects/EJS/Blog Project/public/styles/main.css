@@ -1,3 +1,7 @@
 #no_post, .blog {
     text-align: center;
 }
+
+.blog {
+    word-wrap:break-word;
+}
