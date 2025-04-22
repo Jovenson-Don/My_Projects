@@ -28,6 +28,7 @@ app.get("/edit-blog/:id", (req, res) => {
 
 app.post("/submit", (req, res) => {
   let blogData = {
+    subject: req.body.subject,
     full_name: req.body.full_name,
     blog: req.body.blog,
     posted: new Date().toLocaleString("en-US", {
@@ -40,6 +41,7 @@ app.post("/submit", (req, res) => {
 
 app.post("/updated", (req, res) => {
   let blogData = {
+    subject: req.body.subject,
     full_name: req.body.full_name,
     blog: req.body.blog,
     posted: new Date().toLocaleString("en-US", {

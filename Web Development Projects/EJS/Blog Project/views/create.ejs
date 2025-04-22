@@ -3,15 +3,15 @@
 <div class="container">
   <form action="/submit" method="POST">
     <div class="form-group">
-      <label for="name">Name</label>
+      
+      <label for="subject">Subject/Title</label>
       <input
         required
-        name="full_name"
+        name="subject"
         type="name"
         class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        placeholder="Full Name"
+        aria-describedby="subject"
+        placeholder="Why did the chicken cross the road?"
       >
       <small id="emailHelp" class="form-text text-muted">
         We'll never share your email with anyone else.
@@ -28,6 +28,17 @@
         rows="8"
         placeholder="To be or not be. That is the question......"
       ></textarea>
+
+      <label for="name">Name</label>
+      <input
+        required
+        name="full_name"
+        type="name"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Full Name"
+      >
       <br>
     </div>
 

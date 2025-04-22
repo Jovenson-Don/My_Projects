@@ -6,7 +6,7 @@
       <div class="modal-dialog">
         <div class="modal-content rounded-4 shadow form-control">
           <div class="border-bottom-0 blog">
-            <h5 class="modal-title fs-5 pb-1"><%= locals.blogs[i]["full_name"] %></h5>
+            <h5 class="modal-title fs-5 pb-1"><%= locals.blogs[i]["subject"] %></h5>
           </div>
           <div class="modal-body py-0">
             <p class="blog border-top 1 pt-1"><%= locals.blogs[i]["blog"] %></p>
@@ -26,6 +26,7 @@
               class="modal-footer flex-column align-items-stretch w-100 border-top-0 p-1"
             >
               <button name="blog" type="submit" class="btn btn-lg btn-secondary">Delete</button>
+              <small>Written by: <%= locals.blogs[i]["full_name"] %></small>
             </form>
           </div>
         </div>

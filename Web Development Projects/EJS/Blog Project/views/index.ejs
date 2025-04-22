@@ -26,7 +26,7 @@
             <div class="card shadow" style="width: 300px;">
               <div class="card-body pb-0">
                 <h5 class="card-title blog border-bottom 1 pb-1">
-                  <%= locals.blogs[i]["full_name"] %>
+                  <%= locals.blogs[i]["subject"] %>
                 </h5>
                 <p class="card-text blog"><%= locals.blogs[i]["blog"] %></p>
                 <p class="blog"><%= locals.blogs[i]["posted"] %></p>
@@ -37,6 +37,7 @@
                 </form>
                 <form action="/delete/<%= i %>" method="GET">
                   <button type="submit" class="btn btn-secondary w-100">Delete</button>
+                  <small>Written by: <%= locals.blogs[i]["full_name"] %></small>
                 </form>
               </div>
             </div>
