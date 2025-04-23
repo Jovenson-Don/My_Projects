@@ -22,12 +22,14 @@ app.get("/all-blogs", (req, res) => {
 });
 
 app.get("/edit-blog/:id", (req, res) => {
+  console.log(req.body)
   blogID = req.params.id;
   res.render("edit-blog.ejs", { post: allBlogs[blogID] });
 });
 
 app.post("/submit", (req, res) => {
   let blogData = {
+    id: allBlogs.length + 1,
     subject: req.body.subject,
     full_name: req.body.full_name,
     blog: req.body.blog,
@@ -39,8 +41,9 @@ app.post("/submit", (req, res) => {
   res.redirect("/all-blogs");
 });
 
-app.post("/updated", (req, res) => {
+app.post("/updated/", (req, res) => {
   let blogData = {
+    id: req.body.id,
     subject: req.body.subject,
     full_name: req.body.full_name,
     blog: req.body.blog,

@@ -5,3 +5,7 @@
 .blog {
     word-wrap:break-word;
 }
+
+.update-box  {
+    display: inline-block;
+}
