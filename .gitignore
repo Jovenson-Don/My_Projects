@@ -3,4 +3,4 @@
 Vagrantfile
 .vagrant/
 .idea/workspace.xml
-node modules
+node modules/
