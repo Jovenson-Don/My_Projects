@@ -9,7 +9,7 @@ import session from "express-session";
 import env from "dotenv";
 
 const app = express();
-const port = 3000;
+const port = 3001;
 const saltRounds = 10;
 env.config();
 
@@ -57,7 +57,6 @@ app.get("/logout", (req, res) => {
 });
 
 app.get("/secrets", async (req, res) => {
-  console.log(req.user);
 
   ////////////////UPDATED GET SECRETS ROUTE/////////////////
   if (req.isAuthenticated()) {
@@ -66,7 +65,6 @@ app.get("/secrets", async (req, res) => {
         `SELECT secret FROM users WHERE email = $1`,
         [req.user.email]
       );
-      console.log(result);
       const secret = result.rows[0].secret;
       if (secret) {
         res.render("secrets.ejs", { secret: secret });
@@ -135,7 +133,6 @@ app.post("/register", async (req, res) => {
           );
           const user = result.rows[0];
           req.login(user, (err) => {
-            console.log("success");
             res.redirect("/secrets");
           });
         }
@@ -165,6 +162,7 @@ app.post("/submit", async function (req, res) {
 passport.use(
   "local",
   new Strategy(async function verify(username, password, cb) {
+    console.log(username)
     try {
       const result = await db.query("SELECT * FROM users WHERE email = $1 ", [
         username,
