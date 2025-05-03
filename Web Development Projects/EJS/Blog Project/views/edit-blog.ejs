@@ -5,12 +5,13 @@
     <div class="modal-content rounded-4 shadow">
       <form action="/updated/" method="POST">
         <div class="modal-header border-bottom-0">
-          <input name="subject" value="<%= locals.post["subject"] %>" class="form-control" required></input>
+          <input type="hidden" name="id" value="<%= post.id %>">
+          <input name="subject" value="<%= post.subject %>" class="form-control" required></input>
         </div>
         <div class="modal-body py-0">
-          <textarea name="blog" class="form-control" rows="8" required><%= locals.post["blog"] %></textarea>
-          <input name="full_name" value="<%= locals.post["full_name"] %>" class="form-control" required></input>
-          <p class="update-box"><%= locals.post["posted"] %></p>
+          <textarea name="blog" class="form-control" rows="8" required><%= post.blog %></textarea>
+          <input name="full_name" value="<%= post.full_name %>" class="form-control unclickable" required readonly></input>
+          <p class="update-box"><%= post.time %></p>
         </div>
         <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
           <button type="submit" class="btn btn-lg btn-primary" id="edit">Update Blog</button>

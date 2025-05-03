@@ -20,24 +20,24 @@
         <h2 id="no_post">Latest Blogs</h2>
       </div>
 
-      <% if (locals.blogs && locals.blogs.length > 0) { %>
+      <% if (blogs && blogs.length > 0) { %>
         <div class="d-flex flex-wrap gap-4 justify-content-start">
-          <% for (let i = 0; i < locals.blogs.length; i++) { %>
+          <% for (let i = 0; i < Math.min(4, blogs.length); i++) { %>
             <div class="card shadow" style="width: 300px;">
               <div class="card-body pb-0">
                 <h5 class="card-title blog border-bottom 1 pb-1">
                   <%= locals.blogs[i]["subject"] %>
                 </h5>
-                <p class="card-text blog"><%= locals.blogs[i]["blog"] %></p>
-                <p class="blog"><%= locals.blogs[i]["posted"] %></p>
+                <p class="card-text blog"><%= blogs[i].blog %></p>
+                <p class="blog"><%= blogs[i].time %></p>
               </div>
               <div class="card-footer bg-white border-top-0 d-flex flex-column gap-2">
-                <form action="/edit-blog/<%= i %>" method="GET">
+                <form action="/edit-blog/<%= blogs[i].id %>" method="GET">
                   <button type="submit" class="btn btn-primary w-100">Edit</button>
                 </form>
-                <form action="/delete/<%= i %>" method="GET">
+                <form action="/delete/<%= locals.blogs[i].id %>?_method=DELETE" method="POST">
                   <button type="submit" class="btn btn-secondary w-100">Delete</button>
-                  <small>Written by: <%= locals.blogs[i]["full_name"] %></small>
+                  <small>Written by: <%= blogs[i].full_name %></small>
                 </form>
               </div>
             </div>

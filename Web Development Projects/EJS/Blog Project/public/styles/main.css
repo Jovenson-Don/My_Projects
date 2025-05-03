@@ -9,3 +9,7 @@
 .update-box  {
     display: inline-block;
 }
+
+.unclickable {
+    pointer-events: none;
+}

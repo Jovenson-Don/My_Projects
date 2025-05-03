@@ -6,12 +6,11 @@ import pg from "pg";
 import bcrypt from "bcrypt";
 import passport from "passport";
 import { Strategy } from "passport-local";
+import methodOverride from "method-override";
 
 const app = express();
 const port = "3000";
-const allBlogs = [];
 const saltRounds = 10;
-let blogID = 0;
 
 env.config();
 
@@ -27,6 +26,7 @@ db.connect();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(methodOverride("_method"));
 
 app.use(
   session({
@@ -39,9 +39,18 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   if (req.isAuthenticated()) {
-    res.render("index.ejs");
+    const id = req.user.id;
+    try {
+      const result = await db.query(
+        "SELECT * FROM blog WHERE user_id = $1 ORDER BY time DESC",
+        [id]
+      );
+      res.render("index.ejs", { blogs: result.rows });
+    } catch (error) {
+      console.log(error);
+    }
   } else {
     res.redirect("/login");
   }
@@ -66,19 +75,34 @@ app.get("/register", (req, res) => {
 });
 
 app.get("/create", (req, res) => {
-  console.log(req.user.fname)
-  res.render("create.ejs", {userInfo: req.user});
+  res.render("create.ejs", { userInfo: req.user });
 });
 
-app.get("/all-blogs", (req, res) => {
-  console.log(req.user);
-  res.render("all-blogs.ejs", { blogs: allBlogs });
+app.get("/all-blogs", async (req, res) => {
+  const id = req.user.id;
+  try {
+    const result = await db.query(
+      "SELECT * FROM blog WHERE user_id = $1 ORDER BY time DESC",
+      [id]
+    );
+    res.render("all-blogs.ejs", { blogs: result.rows });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
-app.get("/edit-blog/:id", (req, res) => {
-  console.log(req.body);
-  blogID = req.params.id;
-  res.render("edit-blog.ejs", { post: allBlogs[blogID] });
+app.get("/edit-blog/:id", async (req, res) => {
+  const id = req.params.id;
+  try {
+    const result = await db.query(
+      "SELECT * FROM blog where id = $1",
+      [id]
+    );
+    const post = result.rows[0];
+    res.render("edit-blog.ejs", { post: post });
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.post("/registering", async (req, res) => {
@@ -95,11 +119,14 @@ app.post("/registering", async (req, res) => {
         if (error) {
           console.log(error);
         } else {
-          await db.query(
-            "INSERT INTO users (first_name, last_name, email, password) VALUES ($1, $2, $3, $4)",
-            [userInfo.first_name, userInfo.last_name, userInfo.email, hash]
+          const newUser = await db.query(
+            "INSERT INTO users (fname, lname, email, password) VALUES ($1, $2, $3, $4) RETURNING *",
+            [userInfo.fname, userInfo.lname, userInfo.email, hash]
           );
-          res.redirect("/login");
+          const user = newUser.rows[0];
+          req.login(user, (error) => {
+            res.redirect("/");
+          });
         }
       });
     }
@@ -108,33 +135,49 @@ app.post("/registering", async (req, res) => {
   }
 });
 
-app.post("/submit", (req, res) => {
-  console.log(req.body);
-  const blogData = {
-    id: allBlogs.length + 1,
-    subject: req.body.subject,
-    full_name: req.body.full_name,
-    blog: req.body.blog,
-    posted: new Date().toLocaleString("en-US", {
-      timeZone: "America/New_York",
-    }),
-  };
-  allBlogs.push(blogData);
+app.post("/submit", async (req, res) => {
+  const blog = req.body.blog;
+  const subject = req.body.subject;
+  const fullName = req.body.full_name;
+  const id = req.user.id;
+  try {
+    await db.query(
+      "INSERT INTO blog (blog, user_id, subject, full_name, time) VALUES ($1, $2, $3, $4, $5)",
+      [
+        blog,
+        id,
+        subject,
+        fullName,
+        new Date().toLocaleString("en-US", { timeZone: "America/New_York" }),
+      ]
+    );
+  } catch (error) {
+    console.log(error);
+  }
   res.redirect("/all-blogs");
 });
 
-app.post("/updated/", (req, res) => {
-  const blogData = {
-    id: req.body.id,
-    subject: req.body.subject,
-    full_name: req.body.full_name,
-    blog: req.body.blog,
-    posted: new Date().toLocaleString("en-US", {
-      timeZone: "America/New_York",
-    }),
-  };
-  allBlogs[blogID] = blogData;
-  res.redirect("/all-blogs");
+app.post("/updated/", async (req, res) => {
+  const subject = req.body.subject;
+  const blog = req.body.blog;
+  const id = req.body.id;
+  console.log(id);
+  try {
+    await db.query(
+      "UPDATE blog SET blog = $1, subject = $2, time = $3 WHERE id = $4",
+      [
+        blog,
+        subject,
+        new Date().toLocaleString("en-US", {
+          timeZone: "America/New_York",
+        }),
+        id,
+      ]
+    );
+    res.redirect("/all-blogs");
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 app.post(
@@ -144,6 +187,16 @@ app.post(
     failureRedirect: "/login",
   })
 );
+
+app.delete("/delete/:id", async (req, res) => {
+  const id = req.params.id;
+  try {
+    await db.query("DELETE FROM blog WHERE id = $1", [id]);
+    res.redirect("/");
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 passport.use(
   new Strategy({ usernameField: "email" }, async function verify(
@@ -159,10 +212,10 @@ passport.use(
 
       if (result.rows.length > 0) {
         const user = result.rows[0];
-        bcrypt.compare(password, user.password, (err, valid) => {
-          if (err) {
-            console.log(err);
-            return cb(err);
+        bcrypt.compare(password, user.password, (error, valid) => {
+          if (error) {
+            console.log(error);
+            return cb(error);
           } else {
             if (valid) {
               return cb(null, user);
@@ -175,9 +228,9 @@ passport.use(
         console.log("no user found");
         return cb(null, false);
       }
-    } catch (err) {
-      console.log(err);
-      return cb(err);
+    } catch (error) {
+      console.log(error);
+      return cb(error);
     }
   })
 );
