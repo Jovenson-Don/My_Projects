@@ -1,13 +1,10 @@
 import {useState} from "react"
-export default function Main() {n  
+export default function Main() {
 
     const [ingredients, setIngredients] = useState([])
-
     const ingredientsListItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
     ))
-
-
 
     function handleSubmit(event) {
         event.preventDefault()
