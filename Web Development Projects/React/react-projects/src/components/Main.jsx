@@ -1,26 +1,35 @@
-import {useState} from "react"
-export default function Main() {n  
+import React from "react"
+import ClaudeRecipe from "./ClaudeRecipe"
+import List from "./List"
 
-    const [ingredients, setIngredients] = useState([])
+export default function Main() {
+    /**
+     * 2. Move the list of ingredients <section> into its
+     *    own IngredientsList component.
+     * 
+     * While you're considering how to structure things, consider
+     * where state is, think about if it makes sense or not to
+     * move it somewhere else, how you'll communicate between
+     * the parent/child components, etc.
+     * 
+     * The app should function as it currently does when you're
+     * done, so there will likely be some extra work to be done
+     * beyond what I've listed above.
+     */
 
-    const ingredientsListItems = ingredients.map(ingredient => (
-        <li key={ingredient}>{ingredient}</li>
-    ))
+    const [ingredients, setIngredients] = React.useState(
+        ["all the main spices", "pasta", "ground beef", "tomato paste"]
+    )
+    const [recipeShown, setRecipeShown] = React.useState(false)
+    
+    function toggleRecipeShown() {
+        setRecipeShown(prevShown => !prevShown)
+    }
 
-
-
-    function handleSubmit(event) {
-        event.preventDefault()
-        const formData = new FormData(event.currentTarget)
+    function addIngredient(formData) {
         const newIngredient = formData.get("ingredient")
         setIngredients(prevIngredients => [...prevIngredients, newIngredient])
     }
-    
-    /**
-     * Challenge:
-     * Using conditional rendering, only render the new <section> IF
-     * there are ingredients added to the list of ingredients.
-     */
 
     return (
         <main>
@@ -33,20 +42,12 @@ export default function Main() {n
                 />
                 <button>Add ingredient</button>
             </form>
-
-            {ingredientsListItems.length === 0 ? null :
-             <section>
-                <h2>Ingredients on hand:</h2>
-                <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
-                {ingredientsListItems.length < 4 ? null :
-                    <div className="get-recipe-container">
-                    <div>
-                        <h3>Ready for a recipe?</h3>
-                        <p>Generate a recipe from your list of ingredients.</p>
-                    </div>
-                    <button>Get a recipe</button>
-                </div>}
-            </section>}
+            
+            {ingredients.length > 0 && <List 
+                ingredients={ingredients}
+                toggleRecipeShown={toggleRecipeShown}/>}
+            
+            {recipeShown && <ClaudeRecipe />}
         </main>
     )
 }
