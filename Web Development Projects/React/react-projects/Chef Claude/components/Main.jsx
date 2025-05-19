@@ -10,6 +10,13 @@ export default function Main() {
     )
 
     const [recipe, setRecipe] = React.useState("")
+    const recipeSection = React.useRef(null)
+
+    React.useEffect(() => {
+        if (!recipe && recipeSection.current != null) {
+           recipeSection.current.scrollIntoView() 
+        }
+    }, [recipe])
     
 
     function addIngredient(formData) {
@@ -33,7 +40,8 @@ export default function Main() {
                 <button>Add ingredient</button>
             </form>
             
-            {ingredients.length > 0 && <List 
+            {ingredients.length > 0 && <List
+                ref={recipeSection} 
                 ingredients={ingredients}
                 showRecipe={showRecipe}
                 />}
