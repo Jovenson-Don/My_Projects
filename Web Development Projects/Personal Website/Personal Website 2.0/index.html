@@ -1,52 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
-    <link rel="stylesheet" href="./public/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joey Don · UGC Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:   #111111;
+    --dark:    #1c1c1c;
+    --mid:     #2e2e2e;
+    --border:  rgba(255,255,255,0.08);
+    --white:   #f5f5f5;
+    --muted:   #888888;
+    --red:     #c0392b;
+    --red-hover: #a93226;
+  }
+
+  body {
+    background: var(--white);
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2.5rem;
+    background: var(--black);
+  }
+
+  .logo {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--white);
+  }
+
+  .nav-socials {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-socials a {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-socials a:hover { color: var(--white); }
+  .nav-socials svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+  /* HERO */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 420px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .hero-text {
+    padding: 3.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #e0e0e0;
+    background: var(--white);
+  }
+
+  .badge {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    margin-bottom: 1.2rem;
+    width: fit-content;
+  }
+
+  .hero-text h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: var(--black);
+  }
+
+  .hero-text h1 em {
+    font-style: normal;
+    font-weight: 300;
+    color: #aaa;
+  }
+
+  .hero-text p {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 340px;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    width: fit-content;
+    transition: background 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+
+  .contact-btn:hover { background: var(--red-hover); }
+
+  /* HEADSHOT */
+  .headshot-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    background: #ebebeb;
+  }
+
+  .headshot-frame {
+    width: 220px;
+    height: 280px;
+    border-radius: 12px;
+    background: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border: 2px dashed #bbb;
+    overflow: hidden;
+  }
+
+  .headshot-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .headshot-placeholder-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #bbb;
+  }
+
+  .headshot-label {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 0.05em;
+  }
+
+  /* VIDEO SECTION */
+  .section {
+    padding: 3rem 2.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    background: var(--white);
+  }
+
+  .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 1.8rem;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  /* To embed a real video, replace a .video-card block with:
+     <div class="video-card" style="padding:0; border:none;">
+       <iframe src="https://www.tiktok.com/embed/v2/YOUR_VIDEO_ID" frameborder="0" allowfullscreen style="width:100%;height:100%;border-radius:10px;"></iframe>
+     </div>
+     Get the video ID from the TikTok URL: tiktok.com/@user/video/VIDEO_ID_HERE
+  */
+  .video-card {
+    background: #ebebeb;
+    border-radius: 10px;
+    aspect-ratio: 9/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .video-card:hover { background: #e0e0e0; }
+
+  .play-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tri {
+    width: 0; height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 12px solid var(--white);
+    margin-left: 2px;
+  }
+
+  .video-label {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 0.05em;
+  }
+
+  /* NICHE TAGS */
+  .niche-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 2rem;
+  }
+
+  .niche-tag {
+    background: var(--red);
+    border: 1px solid #ddd;
+    color: white;
+    font-size: 12px;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+  }
+
+  .niche-tag.accent {
+    background: var(--red);
+    border-color: var(--red);
+    color: white;
+  }
+
+  /* SOCIALS SECTION */
+  .socials-section {
+    padding: 2rem 2.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .socials-left {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .social-links {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: white;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .social-link svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+  .social-link:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--black);
+    padding: 1.8rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-name {
+    font-size: 13px;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+
+  .footer-name span { color: var(--red); }
+
+  .footer-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+  }
+
+  .footer-links a svg { width: 12px; height: 12px; fill: currentColor; }
+  .footer-links a:hover { color: var(--white); }
+
+  .footer-copy {
+    font-size: 11px;
+    color: #444;
+  }
+
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-text { border-right: none; border-bottom: 1px solid #e0e0e0; }
+    .hero-text h1 { font-size: 2rem; }
+    .video-grid { grid-template-columns: repeat(2, 1fr); }
+    nav { flex-direction: column; gap: 1rem; padding: 1rem 1.2rem; }
+    .socials-section { flex-direction: column; }
+    .section { padding: 2rem 1.2rem; }
+  }
+</style>
 </head>
 <body>
-    <div class="header-container">
-        <h1>Jovenson <span>Don</span></h1>
-        <ul class="nav-list links">
-            <li><a href="https://github.com/Jovenson-Don/My_Projects">Projects</a></li>
-            <li><a href="./contact.html">Contact Me</a></li> 
-            <li><a href="https://www.google.com/">Search</a></li>
-        </ul>
-        <ul class="nav-list">
-            <li><a href="https://x.com/joeydon21"><img class="social" src="./public/images/twitter.png" alt="Twitter"></a></li>
-            <li><a href="https://www.instagram.com/joeydon21/"><img class="social" src="./public/images/instagram.png" alt="instagram"></a></li>
-            <li><a href="https://www.facebook.com/joeydon21/"><img class="social" src="./public/images/facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://www.linkedin.com/in/jovenson-don-88840864/"><img class="social" src="./public/images/linkedin.png" alt="linkedin"></a></li>
-        </ul>
+
+<nav>
+  <div class="logo">Joey Don</div>
+  <div class="nav-socials">
+    <a href="https://www.tiktok.com/@iamjoeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>TikTok 1</a>
+    <a href="https://www.tiktok.com/@iamjoeydon2" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>TikTok 2</a>
+    <a href="https://www.instagram.com/iamjoeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>Instagram</a>
+    <a href="https://www.facebook.com/iamjoeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
+    <a href="https://www.youtube.com/@joeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>YouTube</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-text">
+    <div class="badge">UGC Creator</div>
+    <h1>Turning real-life moments <em>into relatable content brands can trust.</em></h1>
+    <p>UGC creator producing relatable lifestyle, parenting, anime, and everyday content that feels natural, engaging, and built for social media.</p>
+    <a href="https://cjet.me/joeydon" class="contact-btn" target="_blank">Get in touch</a>
+  </div>
+  <div class="headshot-area">
+    <!-- OPTION A: Placeholder -->
+    <div class="headshot-frame">
+      <div class="headshot-placeholder-icon"></div>
+      <div class="headshot-label">Your photo here</div>
     </div>
-    <div class="about-me-container">
-        <div class="about-me-content">
-            <h2>Welcome</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in luctus magna, a ultricies orci. Integer auctor congue lectus, ac fringilla risus porta eu. Morbi facilisis gravida luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies accumsan neque, quis tincidunt turpis varius non. Quisque scelerisque est ligula, vel dignissim ligula cursus vel. Sed facilisis tortor erat, ac luctus urna euismod sodales.</p>
-        </div>
-        <img class="profile-pic" src="./public/images/profile pic.JPG" alt="picture of Joey">
+    <!-- OPTION B: Your real headshot — uncomment and delete Option A above
+    <div class="headshot-frame">
+      <img src="your-photo.jpg" alt="Joey Don" />
     </div>
-    <div class="container">
-        <div class="item">
-            <h3>Skills</h3>
-            <img class="placeholder" src="./public/images/skills.gif" alt="">
-            <p class="section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultricies accumsan neque, quis tincidunt turpis varius non. Quisque scelerisque est ligula, vel dignissim ligula cursus vel. Sed facilisis tortor erat, ac luctus urna euismod sodales.</p>
-        </div>
-        <div class="item">
-            <h3>Project</h3>
-            <img class="placeholder" src="./public/images/projects.gif" alt="">
-            <p class="section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque est ligula, vel dignissim ligula cursus vel. Sed facilisis tortor erat, ac luctus urna euismod sodales.</p>
-        </div>
-        <div class="item" id="third">
-            <h3>About Me</h3>
-            <img class="placeholder" src="./public/images/about me.gif" alt="">
-            <p class="section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
+    -->
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Content Portfolio — Short Form Video</div>
+  <div class="video-grid">
+
+    <!-- To embed a real TikTok video, replace a .video-card block with:
+    <div class="video-card" style="padding:0; border:none;">
+      <iframe src="https://www.tiktok.com/embed/v2/YOUR_VIDEO_ID" frameborder="0" allowfullscreen style="width:100%;height:100%;border-radius:10px;"></iframe>
     </div>
+    Get the video ID from the TikTok URL: tiktok.com/@user/video/VIDEO_ID_HERE
+    -->
+
+    <div class="video-card">
+      <div class="play-btn"><div class="tri"></div></div>
+      <div class="video-label">Video 1</div>
+    </div>
+    <div class="video-card">
+      <div class="play-btn"><div class="tri"></div></div>
+      <div class="video-label">Video 2</div>
+    </div>
+    <div class="video-card">
+      <div class="play-btn"><div class="tri"></div></div>
+      <div class="video-label">Video 3</div>
+    </div>
+    <div class="video-card">
+      <div class="play-btn"><div class="tri"></div></div>
+      <div class="video-label">Video 4</div>
+    </div>
+  </div>
+
+  <div class="niche-row">
+    <div class="niche-tag accent">Work humor</div>
+    <div class="niche-tag accent">Parenting</div>
+    <div class="niche-tag ">Relatable content</div>
+    <div class="niche-tag">Lifestyle</div>
+    <div class="niche-tag">Product reviews</div>
+    <div class="niche-tag">TikTok · Reels · Shorts</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-name">Joey Don · <span>UGC Creator</span></div>
+  <div class="footer-links">
+    <a href="https://www.tiktok.com/@iamjoeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg> TikTok 1</a>
+    <a href="https://www.tiktok.com/@iamjoeydon2" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg> TikTok 2</a>
+    <a href="https://www.instagram.com/iamjoeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg> Instagram</a>
+    <a href="https://www.facebook.com/iamjoeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a>
+    <a href="https://www.youtube.com/@joeydon" target="_blank"><svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg> YouTube</a>
+    <a href="mailto:iamjoeydon@outlook.com"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> Email</a>
+  </div>
+  <div class="footer-copy">© 2026 Joey Don · All rights reserved</div>
+</footer>
+
 </body>
 </html>
