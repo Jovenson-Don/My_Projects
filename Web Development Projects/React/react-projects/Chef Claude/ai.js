@@ -10,7 +10,7 @@ but try not to include too many extra ingredients. Format your response in markd
 const apiKey = import.meta.env.VITE_HF_ACCESS_TOKEN
 console.log(apiKey)
 
-
+const hf = new HfInference(apiKey)
 export async function getRecipeFromMistral(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
     try {
